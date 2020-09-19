@@ -38,16 +38,24 @@ class JZTShopCategoryViewController: UIViewController,UICollectionViewDelegate,U
         self.setUpUI()
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        collectionView.backgroundView?.mask(corners: [.topLeft,.bottomLeft], radius: 10)
+//        collectionView.mask(corners: [.topLeft,.bottomLeft], radius: 10)
+    }
+    
     func setUpUI() {
         if let dataModel = read(JZTShopDataModel.self, from: Bundle.main.url(forResource: "test", withExtension: "json")!) {
             listDataArray = dataModel.data
         }
-        
+        collectionView.backgroundView = UIView.init(color: .white)
+        collectionView.backgroundColor = .clear
         collectionView.register(JZTCategoryCell.self, forCellWithReuseIdentifier: "JZTCategoryCell")
         collectionView.register(supplementaryViewOfKind: "JZTHeaderView", withClass: JZTHeaderView.self)
         collectionView.register(supplementaryViewOfKind: "JZTFooterView", withClass: JZTFooterView.self)
         collectionView.dataSource = self
         collectionView.delegate = self
+        
         view.add(self.collectionView).snp.makeConstraints { (make) in
             make.top.right.bottom.equalToSuperview()
             make.leading.equalToSuperview().offset(64)
@@ -134,8 +142,8 @@ extension JZTShopCategoryViewController{
     }
     
     class JZTFooterView: LZCollectionReusableView {
-        let cancleBtn = UIButton.init(font: .font14, title: "重置", titleColor: .red);
-        let confirmBtn = UIButton.init(font: .font14, title: "确定", titleColor: .red)
+        let cancleBtn = UIButton.init(font: .font14, title: "重置", titleColor: .hex333333);
+        let confirmBtn = UIButton.init(font: .font14, title: "确定", titleColor: .white)
         override func setupUI() {
             let stack = UIStackView.init(arrangedSubviews: [cancleBtn,confirmBtn], axis: .horizontal, spacing: 20, alignment: .fill, distribution: .fillEqually)
             cancleBtn.layer.cornerRadius = 25
@@ -144,7 +152,7 @@ extension JZTShopCategoryViewController{
             confirmBtn.layer.cornerRadius = 25
             confirmBtn.backgroundColor = .main
             confirmBtn.borderWidth = 1
-            confirmBtn.borderColor = .init(hex: "ff344d")
+            confirmBtn.borderColor = .white
             self.add(stack).snp.makeConstraints { (make) in
                 make.top.bottom.equalToSuperview()
                 make.leading.equalToSuperview().offset(20)
