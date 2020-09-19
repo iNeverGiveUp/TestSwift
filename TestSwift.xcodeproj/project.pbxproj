@@ -13,6 +13,11 @@
 		7452BBC625079FBA00E3D6AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7452BBC525079FBA00E3D6AD /* Assets.xcassets */; };
 		7452BBC925079FBA00E3D6AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7452BBC725079FBA00E3D6AD /* LaunchScreen.storyboard */; };
 		7452BBD12507A39A00E3D6AD /* JZTPopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7452BBD02507A39A00E3D6AD /* JZTPopViewController.swift */; };
+		745EEDF32510E63C00D1AFAF /* JZTZiXunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745EEDF22510E63C00D1AFAF /* JZTZiXunViewController.swift */; };
+		745EEDF52510ED1400D1AFAF /* JZTZiXunCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745EEDF42510ED1400D1AFAF /* JZTZiXunCell.swift */; };
+		745EEDF7251101DE00D1AFAF /* tongcheng.json in Resources */ = {isa = PBXBuildFile; fileRef = 745EEDF6251101DE00D1AFAF /* tongcheng.json */; };
+		746397512515C61B00AF8939 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 746397502515C61B00AF8939 /* test.json */; };
+		7472E58D25149F250018D709 /* JZTShopCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7472E58C25149F250018D709 /* JZTShopCategoryViewController.swift */; };
 		D47151C650D2B71007E9346E /* Pods_TestSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CB8B09E9D466058D7E27E3 /* Pods_TestSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +31,11 @@
 		7452BBC825079FBA00E3D6AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7452BBCA25079FBA00E3D6AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7452BBD02507A39A00E3D6AD /* JZTPopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JZTPopViewController.swift; sourceTree = "<group>"; };
+		745EEDF22510E63C00D1AFAF /* JZTZiXunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JZTZiXunViewController.swift; sourceTree = "<group>"; };
+		745EEDF42510ED1400D1AFAF /* JZTZiXunCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JZTZiXunCell.swift; sourceTree = "<group>"; };
+		745EEDF6251101DE00D1AFAF /* tongcheng.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tongcheng.json; sourceTree = "<group>"; };
+		746397502515C61B00AF8939 /* test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
+		7472E58C25149F250018D709 /* JZTShopCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JZTShopCategoryViewController.swift; sourceTree = "<group>"; };
 		94643675909C7FB87415126C /* Pods-TestSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSwift.release.xcconfig"; path = "Target Support Files/Pods-TestSwift/Pods-TestSwift.release.xcconfig"; sourceTree = "<group>"; };
 		CD0C34AE24527BCF8EBD031C /* Pods-TestSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSwift.debug.xcconfig"; path = "Target Support Files/Pods-TestSwift/Pods-TestSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,9 +73,14 @@
 		7452BBBB25079FBA00E3D6AD /* TestSwift */ = {
 			isa = PBXGroup;
 			children = (
+				745EEDF6251101DE00D1AFAF /* tongcheng.json */,
 				7452BBBC25079FBA00E3D6AD /* AppDelegate.swift */,
 				7452BBC025079FBA00E3D6AD /* ViewController.swift */,
 				7452BBD02507A39A00E3D6AD /* JZTPopViewController.swift */,
+				745EEDF22510E63C00D1AFAF /* JZTZiXunViewController.swift */,
+				7472E58C25149F250018D709 /* JZTShopCategoryViewController.swift */,
+				745EEDF42510ED1400D1AFAF /* JZTZiXunCell.swift */,
+				746397502515C61B00AF8939 /* test.json */,
 				7452BBC225079FBA00E3D6AD /* Main.storyboard */,
 				7452BBC525079FBA00E3D6AD /* Assets.xcassets */,
 				7452BBC725079FBA00E3D6AD /* LaunchScreen.storyboard */,
@@ -153,7 +168,9 @@
 			files = (
 				7452BBC925079FBA00E3D6AD /* LaunchScreen.storyboard in Resources */,
 				7452BBC625079FBA00E3D6AD /* Assets.xcassets in Resources */,
+				746397512515C61B00AF8939 /* test.json in Resources */,
 				7452BBC425079FBA00E3D6AD /* Main.storyboard in Resources */,
+				745EEDF7251101DE00D1AFAF /* tongcheng.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,9 +223,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				745EEDF32510E63C00D1AFAF /* JZTZiXunViewController.swift in Sources */,
 				7452BBC125079FBA00E3D6AD /* ViewController.swift in Sources */,
 				7452BBBD25079FBA00E3D6AD /* AppDelegate.swift in Sources */,
 				7452BBD12507A39A00E3D6AD /* JZTPopViewController.swift in Sources */,
+				745EEDF52510ED1400D1AFAF /* JZTZiXunCell.swift in Sources */,
+				7472E58D25149F250018D709 /* JZTShopCategoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

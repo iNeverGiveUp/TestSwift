@@ -13,12 +13,11 @@ import SwiftComponents
 class JZTPopViewController: UIViewController {
     typealias clickItemIndex = (Int)->()
     var clickItemBlock: clickItemIndex?
-    
+
     var titlesArray = [String]()
     
-    let contentView = UIView(color: .white)
-    let stackView = UIStackView()
-    
+    private let contentView = UIView(color: .white)
+    private let stackView = UIStackView()
     
     override func viewDidLoad() {
         super.viewDidLoad()

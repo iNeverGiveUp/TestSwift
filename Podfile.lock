@@ -2,15 +2,18 @@ PODS:
   - Alamofire (5.2.2)
   - Differentiator (4.0.1)
   - KakaJSON (1.1.2)
-  - Kingfisher (5.15.0):
-    - Kingfisher/Core (= 5.15.0)
-  - Kingfisher/Core (5.15.0)
+  - Kingfisher (5.15.1):
+    - Kingfisher/Core (= 5.15.1)
+  - Kingfisher/Core (5.15.1)
   - MBProgressHUD (1.2.0)
   - MJRefresh (3.5.0)
   - Moya (14.0.0):
     - Moya/Core (= 14.0.0)
   - Moya/Core (14.0.0):
     - Alamofire (~> 5.0)
+  - Moya/RxSwift (14.0.0):
+    - Moya/Core
+    - RxSwift (~> 5.0)
   - RxCocoa (5.1.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -44,6 +47,7 @@ PODS:
   - SwiftComponents/rxcomponents (1.0.0):
     - MBProgressHUD
     - MJRefresh
+    - Moya/RxSwift
     - RxCocoa
     - RxDataSources
     - RxOptional
@@ -54,7 +58,6 @@ PODS:
     - KakaJSON
     - Moya
     - SwiftyJSON
-    - YYCache
   - SwiftComponents/service_rx (1.0.0):
     - RxSwift (~> 5.0)
     - SwiftComponents/service
@@ -89,7 +92,6 @@ PODS:
   - SwifterSwift/UIKit (5.2.0)
   - SwiftyJSON (5.0.0)
   - URLNavigator (2.3.0)
-  - YYCache (1.0.4)
 
 DEPENDENCIES:
   - SwiftComponents (from `https://github.com/LZRight123/SwiftComponents.git`)
@@ -114,7 +116,6 @@ SPEC REPOS:
     - SwifterSwift
     - SwiftyJSON
     - URLNavigator
-    - YYCache
 
 EXTERNAL SOURCES:
   SwiftComponents:
@@ -122,14 +123,14 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   SwiftComponents:
-    :commit: f05cb5f1f0f8bab0402647c6c8c76226e57a08ea
+    :commit: 7c599247cc539749e70a4fb6a0cdcd0ddf18c322
     :git: https://github.com/LZRight123/SwiftComponents.git
 
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   KakaJSON: cc5ff50a8c1cfbb09413db8496cb709a209e6137
-  Kingfisher: 1acb67597a520c2d0310677e66d6e0af455ef757
+  Kingfisher: 3260a05e78a17fdbeb2f14dd8e66ffc768491231
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
@@ -141,11 +142,10 @@ SPEC CHECKSUMS:
   RxViewController: 7330a46e5c31cd680db169da4c9fc8676e975a81
   RxWebKit: a3085e7cd8b57182b452692686675702474014dd
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
-  SwiftComponents: 50910090253424a6ed4736d99abb2796462cba5e
+  SwiftComponents: 057bff05d122afbfd80df2fdaf68587e51f8d1a5
   SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   URLNavigator: 2593c0e2d293732ec5c44503cf54dceba1a68085
-  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
 PODFILE CHECKSUM: fdeeffff32ebbc5e93968a5dbbebf2cd37674e5d
 
